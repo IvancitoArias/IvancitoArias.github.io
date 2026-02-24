@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="logo.png" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Iván</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1><span id="nav-typing"></span></h1>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio">
+    <h2 class="hero-title"><span id="typing"></span></h2>
+    <p class="hero-subtitle">
+      Estudiante de profesorado de matemática y desarrollador web. 
+      Me especializo en HTML, CSS, JavaScript y proyectos web funcionales.
+    </p>
+    <button class="btn" onclick="scrollToSection('proyectos')">Ver mis proyectos</button>
+  </header>
+
+  <!-- ABOUT -->
+<section id="sobre-mi" class="about">
+  <h2 class="section-title">Sobre mí</h2>
+    <div class="card"><p>
+      Soy estudiante de profesorado en Matemática y desarrollador web de Argentina.
+      Me especializo en crear aplicaciones web funcionales con HTML, CSS, JavaScript y Node.js.
+      También tengo experiencia técnica en reparación de dispositivos electrónicos,
+      lo que me da un enfoque lógico y analítico para resolver problemas.
+</p></div>
+
+</section>
+
+
+
+
+<section id="skills">
+
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <a id="sobre-mi"><div class="skill">HTML</div></a>
+    <a id="sobre-mi"><div class="skill">CSS</div></a>
+    <a id="sobre-mi"><div class="skill">JavaScript</div></a>
+    <a id="sobre-mi"><div class="skill">Node.js</div></a>
+    <a id="sobre-mi"><div class="skill">Responsive Design</div></a>
+    <a id="sobre-mi"><div class="skill">Git & GitHub</div></a>
+  </div>
+
+</section>
+
+
+
+
+<section id="perfil-tecnico">
+  <h2 class="section-title">Perfil Técnico</h2>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h3>Hardware</h3>
+      <p>Diagnóstico y reparación de placas, cambio de módulos, microsoldadura, testeo eléctrico.</p>
+    </div>
+
+    <div class="tech-card">
+      <h3>Software</h3>
+      <p>Desarrollo web con HTML, CSS, JavaScript y Node.js. Creación de sistemas con autenticación y bases de datos.</p>
+    </div>
+
+    <div class="tech-card">
+      <h3>Lógica & Matemática</h3>
+      <p>Formación académica en matemática que fortalece la resolución de problemas y el pensamiento estructurado.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section id="proyectos">
+    <h2 class="section-title">Mis Proyectos</h2>
+     <div class="projects-grid">
+
+
+        <a class="button" href="https://inpromaq.com/" target="_blank" class="project-btn"><div class="card">
+         <h3>Pagina Web Empresarial</h3>
+          <p>Pagina Web Diseñada Y programada Con HTML,CSS y JS.</p>
+        </div></a>
+
+        <a class="button" href=""><div class="card">
+          <h3>Sistema de Login</h3>
+          <p>Proyecto con Node.js, base de datos y autenticación de usuarios.</p>
+        </div></a>
+        
+        <a class="button" href=""><div class="card">
+          <h3>Landing Page Animada</h3>
+          <p>Landing page con efectos de scroll y diseño profesional.</p>
+        </div></a>
+
+    </div>
+
+
+  </section>
+
+  <!-- CONTACT -->
+
+  
+  <section id="contacto" class="contact">
+  <div class="contact-container">
+    
+    <div class="card contact-left">
+      <h2 class="section-title">Contacto</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Tu nombre" required />
+        <input type="email" name="user_email" placeholder="Tu email" required />
+        <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+        <input type="text" name="botcheck" style="display:none;">
+      </form>
+    </div>
+
+    <!-- LOGO A LA DERECHA -->
+    <div class="contact-right">
+      <img src="logo.png" alt="Logo Iván" class="contact-logo">
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+  <p>© 2026 Iván</p>
+  <div class="social">
+    <a href="https://github.com/TU-USUARIO" target="_blank">GitHub </a>
+    <a href="https://www.linkedin.com/in/iv%C3%A1n-arias-901282259/">LinkedIn</a>
+    <a href="elivanarias1532@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="scripts.js"></script>
+<div class="grid-background"></div>
+</body>
+
+
+</html>
