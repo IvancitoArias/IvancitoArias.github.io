@@ -1,157 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href="logo.png" type="image/svg+xml">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Iván</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-
+  <title>Riot After Twelve</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <a class="logo" href="#inicio">RIOT AFTER TWELVE</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#integrantes">Integrantes</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav>
-    <h1><span id="nav-typing"></span></h1>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <header id="inicio">
-    <h2 class="hero-title"><span id="typing"></span></h2>
-    <p class="hero-subtitle">
-      Estudiante de profesorado de matemática y desarrollador web. 
-      Me especializo en HTML, CSS, JavaScript y proyectos web funcionales.
-    </p>
-    <button class="btn" onclick="scrollToSection('proyectos')">Ver mis proyectos</button>
+    <section class="hero-content">
+      <p class="small-title">SOMOS</p>
+      <h1>RIOT AFTER<br>TWELVE</h1>
+      <div class="hero-grid">
+        <img src="img/banda-1.jpg" alt="Riot After Twelve en vivo" />
+        <p>
+          Riot After Twelve es una banda de rock formada en junio de 2022 en
+          Concepción del Uruguay, Entre Ríos, Argentina.
+        </p>
+      </div>
+    </section>
   </header>
 
-  <!-- ABOUT -->
-<section id="sobre-mi" class="about">
-  <h2 class="section-title">Sobre mí</h2>
-    <div class="card"><p>
-      Soy estudiante de profesorado en Matemática y desarrollador web de Argentina.
-      Me especializo en crear aplicaciones web funcionales con HTML, CSS, JavaScript y Node.js.
-      También tengo experiencia técnica en reparación de dispositivos electrónicos,
-      lo que me da un enfoque lógico y analítico para resolver problemas.
-</p></div>
+  <main>
+    <section class="section two-columns" id="nosotros">
+      <div>
+        <h2 class="red">Sobre nosotros</h2>
+        <p>
+          Nuestra propuesta se enfoca en los géneros rock alternativo, nu metal y
+          grunge, recorriendo canciones que marcaron a toda una generación.
+          Entre ellas, grandes clásicos de bandas como System of a Down, Linkin Park,
+          Alice in Chains, Rage Against the Machine y Nirvana, entre muchas otras.
+        </p>
+      </div>
+      <img src="img/guitarra.jpg" alt="Guitarrista en vivo" />
+    </section>
 
-</section>
+    <section class="section collage">
+      <p>
+        Con un show cargado de energía y nostalgia, revivimos los himnos más
+        emblemáticos del rock de los 90's y 2000's, conectando con todos los que
+        crecieron o descubrieron después la fuerza de esa era inolvidable.
+      </p>
+      <div class="collage-images">
+        <img src="img/show-1.jpg" alt="Show en vivo" />
+        <img src="img/show-2.jpg" alt="Banda tocando" />
+      </div>
+    </section>
 
+    <section class="section integrantes" id="integrantes">
+      <h2>Integrantes</h2>
 
+      <div class="cards">
+        <article class="member-card">
+          <span>01</span>
+          <img src="img/lucas.jpg" alt="Lucas Iván Moser" />
+          <h3>Lucas Iván Moser</h3>
+          <p>Voz</p>
+        </article>
 
+        <article class="member-card">
+          <span>02</span>
+          <img src="img/dante.jpg" alt="Dante Nosalevich" />
+          <h3>Dante Nosalevich</h3>
+          <p>Guitarra</p>
+        </article>
 
-<section id="skills">
+        <article class="member-card">
+          <span>03</span>
+          <img src="img/facundo.jpg" alt="Facundo Lecuna" />
+          <h3>Facundo Lecuna</h3>
+          <p>Bajo y coros</p>
+        </article>
 
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-grid">
-    <a id="sobre-mi"><div class="skill">HTML</div></a>
-    <a id="sobre-mi"><div class="skill">CSS</div></a>
-    <a id="sobre-mi"><div class="skill">JavaScript</div></a>
-    <a id="sobre-mi"><div class="skill">Node.js</div></a>
-    <a id="sobre-mi"><div class="skill">Responsive Design</div></a>
-    <a id="sobre-mi"><div class="skill">Git & GitHub</div></a>
-  </div>
+        <article class="member-card">
+          <span>04</span>
+          <img src="img/santiago.jpg" alt="Santiago Andisco" />
+          <h3>Santiago Andisco</h3>
+          <p>Batería</p>
+        </article>
+      </div>
+    </section>
 
-</section>
+    <section class="section historia" id="historia">
+      <div>
+        <h2>Cómo empezamos</h2>
+        <p>
+          Lo que empezó siendo una idea para tocar juntos y compartir la música que
+          nos marcó, rápidamente se transformó en una propuesta en vivo cargada de
+          energía y nostalgia que conecta con quienes crecieron escuchando esas
+          canciones que definieron toda una generación.
+        </p>
+      </div>
 
+      <div class="history-images">
+        <img src="img/grupo-1.jpg" alt="Foto grupal" />
+        <img src="img/show-3.jpg" alt="Banda en escenario" />
+        <img src="img/grupo-2.jpg" alt="Integrantes de la banda" />
+      </div>
+    </section>
 
+    <section class="section frase">
+      <p>
+        Más que un simple homenaje, buscamos recrear en cada show la esencia y la
+        potencia de esos años dorados del rock, ofreciendo al público una experiencia
+        intensa, llena de recuerdos, emoción y pasión por la música que seguimos amando.
+      </p>
+    </section>
 
+    <section class="section contacto" id="contacto">
+      <img src="img/publico.jpg" alt="Público en show" />
 
-<section id="perfil-tecnico">
-  <h2 class="section-title">Perfil Técnico</h2>
-  <div class="tech-grid">
-    <div class="tech-card">
-      <h3>Hardware</h3>
-      <p>Diagnóstico y reparación de placas, cambio de módulos, microsoldadura, testeo eléctrico.</p>
-    </div>
+      <p>
+        Hoy, Riot After Twelve sigue creciendo como una propuesta fresca, sincera y
+        poderosa, manteniéndose fiel a lo que nos unió desde el primer ensayo: la
+        amistad, la pasión por la música y las ganas de revivir esos temas que todavía
+        nos hacen temblar el corazón.
+      </p>
 
-    <div class="tech-card">
-      <h3>Software</h3>
-      <p>Desarrollo web con HTML, CSS, JavaScript y Node.js. Creación de sistemas con autenticación y bases de datos.</p>
-    </div>
+      <h2>Contactanos</h2>
+      <h4>Por nuestras redes</h4>
 
-    <div class="tech-card">
-      <h3>Lógica & Matemática</h3>
-      <p>Formación académica en matemática que fortalece la resolución de problemas y el pensamiento estructurado.</p>
-    </div>
-  </div>
-</section>
+      <div class="contact-links">
+        <a href="#" aria-label="WhatsApp">
+          <strong>WhatsApp</strong>
+          <span>☎</span>
+        </a>
 
-  <!-- PROJECTS -->
-  <section id="proyectos">
-    <h2 class="section-title">Mis Proyectos</h2>
-     <div class="projects-grid">
+        <a href="#" aria-label="Instagram">
+          <strong>Instagram</strong>
+          <span>◎</span>
+        </a>
 
+        <a href="mailto:r12correocdelu@gmail.com" aria-label="Mail">
+          <strong>Mail</strong>
+          <span>✉</span>
+          <small>r12correocdelu@gmail.com</small>
+        </a>
+      </div>
+    </section>
+  </main>
 
-        <a class="button" href="https://inpromaq.com/" target="_blank" class="project-btn"><div class="card">
-         <h3>Pagina Web Empresarial</h3>
-          <p>Pagina Web Diseñada Y programada Con HTML,CSS y JS.</p>
-        </div></a>
+  <button class="top-btn" id="topBtn" aria-label="Volver arriba">↑</button>
 
-        <a class="button" href=""><div class="card">
-          <h3>Sistema de Login</h3>
-          <p>Proyecto con Node.js, base de datos y autenticación de usuarios.</p>
-        </div></a>
-        
-        <a class="button" href=""><div class="card">
-          <h3>Landing Page Animada</h3>
-          <p>Landing page con efectos de scroll y diseño profesional.</p>
-        </div></a>
-
-    </div>
-
-
-  </section>
-
-  <!-- CONTACT -->
-
-  
-  <section id="contacto" class="contact">
-  <div class="contact-container">
-    
-    <div class="card contact-left">
-      <h2 class="section-title">Contacto</h2>
-      <form id="contact-form">
-        <input type="text" name="user_name" placeholder="Tu nombre" required />
-        <input type="email" name="user_email" placeholder="Tu email" required />
-        <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-        <button class="btn" type="submit">Enviar</button>
-        <input type="text" name="botcheck" style="display:none;">
-      </form>
-    </div>
-
-    <!-- LOGO A LA DERECHA -->
-    <div class="contact-right">
-      <img src="logo.png" alt="Logo Iván" class="contact-logo">
-    </div>
-
-  </div>
-</section>
-
-  <footer>
-  <p>© 2026 Iván</p>
-  <div class="social">
-    <a href="https://github.com/TU-USUARIO" target="_blank">GitHub </a>
-    <a href="https://www.linkedin.com/in/iv%C3%A1n-arias-901282259/">LinkedIn</a>
-    <a href="elivanarias1532@gmail.com">Email</a>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="scripts.js"></script>
-<div class="grid-background"></div>
+  <script src="script.js"></script>
 </body>
-
-
 </html>
